@@ -19,7 +19,6 @@ public class MainVerticle extends AbstractVerticle {
   public void start(Promise<Void> promise) throws Exception {
     ConfigStoreOptions jsonStore = new ConfigStoreOptions()
       .setType("file")
-      .setFormat("properties")
       .setConfig(new JsonObject().put("path", "conf/conf.json"));
 
     ConfigRetrieverOptions CROptions = new ConfigRetrieverOptions()

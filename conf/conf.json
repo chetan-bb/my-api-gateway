@@ -1,4 +1,15 @@
 {
-  "API_SERVER_ADDRESS": "localhost",
-  "API_SERVER_PORT": 8080
+  "api.gateway.http.address": "localhost",
+  "api.gateway.http.port": 8080,
+  "prod.env": true,
+  "client.app.external.internal.uri": {
+    "/mapi/v4.0.0/member/login": "/hulk/member/login",
+    "/mapi/v4.0.0/member/otp/send": "/hulk/member/otp/send",
+    "/mapi/v4.0.0/member/update": "/hulk/member/update"
+  },
+  "client.web.external.internal.uri": {
+    "/mapi/v4.0.0/member/login": "/member/web/login",
+    "/mapi/v4.0.0/member/otp/send": "/hulk/member/otp/send",
+    "/mapi/v4.0.0/member/update": "/hulk/member/update"
+  }
 }
